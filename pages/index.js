@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <>
-      <h1>Fische Shop</h1>
+      <h1>Recipes App</h1>
     </>
   );
 }
