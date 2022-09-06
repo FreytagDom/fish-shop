@@ -1,10 +1,18 @@
+import Link from "next/link";
+
 export default function Header() {
   return (
     <header>
       <nav>
-        <a>Startseite</a>
-        <a>Veggie</a>
-        <a>Dessert</a>
+        <Link href="/">
+          <a>Startseite</a>
+        </Link>
+        <Link href="/veggie">
+          <a>Veggie</a>
+        </Link>
+        <Link href="/dessert">
+          <a>Dessert</a>
+        </Link>
       </nav>
     </header>
   );
