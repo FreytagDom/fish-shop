@@ -1,19 +1,32 @@
 import Link from "next/link";
+import styled from "styled-components";
 
 export default function Header() {
   return (
-    <header>
-      <nav>
+    <Wrapper>
+      <Nav>
         <Link href="/">
-          <a>Startseite</a>
+          <Sides>Startseite</Sides>
         </Link>
         <Link href="/veggie">
-          <a>Veggie</a>
+          <Sides>Veggie</Sides>
         </Link>
         <Link href="/dessert">
-          <a>Dessert</a>
+          <Sides>Dessert</Sides>
         </Link>
-      </nav>
-    </header>
+      </Nav>
+    </Wrapper>
   );
 }
+
+const Nav = styled.nav`
+  font-size: 1em;
+  color: darkcyan;
+`;
+const Wrapper = styled.header`
+  justify-content: space-evenly;
+`;
+
+const Sides = styled.a`
+  justify-content: space-between;
+`;

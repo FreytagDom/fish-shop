@@ -1,9 +1,11 @@
 import Image from "next/image";
-
+import styled from "styled-components";
 export default function Dessert() {
   return (
     <>
-      <h1>Dessert</h1>
+      <Wrapper>
+        <Title>Dessert</Title>
+      </Wrapper>
       <p>Quarkschale</p>
       <p>Fruchsalat</p>
       <Image
@@ -16,3 +18,14 @@ export default function Dessert() {
     </>
   );
 }
+
+const Title = styled.h2`
+  font-size: 2.5em;
+  text-align: center;
+  color: rebeccapurple;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+`;
+
+const Wrapper = styled.section`
+  background: transparent;
+`;
