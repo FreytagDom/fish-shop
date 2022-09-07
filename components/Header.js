@@ -6,13 +6,13 @@ export default function Header() {
     <PageHeader>
       <Navigation>
         <Link href="/">
-          <Sides>Startseite</Sides>
+          <a>Startseite</a>
         </Link>
         <Link href="/veggie">
-          <Sides>Veggie</Sides>
+          <a>Veggie</a>
         </Link>
         <Link href="/dessert">
-          <Sides>Dessert</Sides>
+          <a>Dessert</a>
         </Link>
       </Navigation>
     </PageHeader>
@@ -29,9 +29,4 @@ const Navigation = styled.nav`
 const PageHeader = styled.header`
   justify-content: space-evenly;
   border-bottom: 1px #000;
-`;
-
-const Sides = styled.a`
-  display: flex;
-  justify-content: space-between;
 `;
