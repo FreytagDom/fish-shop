@@ -3,8 +3,8 @@ import styled from "styled-components";
 
 export default function Header() {
   return (
-    <Wrapper>
-      <Nav>
+    <PageHeader>
+      <Navigation>
         <Link href="/">
           <Sides>Startseite</Sides>
         </Link>
@@ -14,19 +14,24 @@ export default function Header() {
         <Link href="/dessert">
           <Sides>Dessert</Sides>
         </Link>
-      </Nav>
-    </Wrapper>
+      </Navigation>
+    </PageHeader>
   );
 }
 
-const Nav = styled.nav`
+const Navigation = styled.nav`
+  display: flex;
   font-size: 1em;
   color: darkcyan;
-`;
-const Wrapper = styled.header`
   justify-content: space-evenly;
+  padding-top: 1rem;
+`;
+const PageHeader = styled.header`
+  justify-content: space-evenly;
+  border-bottom: 1px #000;
 `;
 
 const Sides = styled.a`
+  display: flex;
   justify-content: space-between;
 `;
